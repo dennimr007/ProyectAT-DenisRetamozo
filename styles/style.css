@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Grid Index*/
+#gridHome {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "text text text"
+        "carrusel carrusel carrusel"
+        "info info info"
+        "info info info"
+        "info info info"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+
+}
+
+/*destok*/
+body {
+    width: 90%;
+    height: 100vh;
+    background: #77A1D3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+/*Menu*/
+header {
+    grid-area: menu;
+    background-color: pink;
+    border: solid 8px white;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row;
+}
+
+.logo {
+    margin: 10px 10px 10px 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.menuNavegacion {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+    padding: 7px;
+    width: 100%;
+
+
+}
+
+.menuBoton {
+    background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%)
+}
+
+.menuBoton {
+    margin: 5px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.menuBoton:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+h2
+
+/*genral*/
+    {
+    grid-area: text;
+    font-family: 'Poppins', italic;
+    margin: 7px 7px 7px 7px;
+    padding: 7px 7px 7px 7px;
+
+
+}
+
+/*elementos index*/
+.carrusel {
+    grid-area: carrusel;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.primerCarrusel {
+    padding: 10px;
+    width: 80%;
+    height: 70vh;
+    position: sticky;
+
+}
+
+.info {
+    grid-area: info;
+    margin: 5px;
+    padding: 5px;
+    border-top: 1px solid white;
+}
+
+.info1 {
+    display: flex;
+    flex-flow: row;
+}
+
+.info2 {
+    display: flex;
+    flex-flow: row;
+}
+
+.info3 {
+    display: flex;
+    flex-flow: row;
+}
+
+.infoFoto {
+    margin: 5px 5px 5px 5px;
+    padding: 7px 7px 7px 7px;
+    align-self: baseline;
+    width: 25%;
+    border: solid 3px white;
+}
+
+h3
+
+/*general*/
+    {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 5px 5px 5px;
+    text-align: justify;
+}
+
+.infoTexto {
+    text-align: center;
+}
+
+/*fin elementos index*/
+
+/*contacto*/
+#gridContacto {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "text text text"
+        "contacForm contactForm contactForm"
+        "pieForm pieForm pieForm"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+
+}
+
+
+form {
+    font-family: 'Poppins';
+    border: solid 5px white;
+    padding: 5px 5px 5px 5px;
+    margin: 3px 3px 3px 3px;
+}
+
+.contacForm {
+    grid-area: contacForm;
+    justify-self: stretch;
+    align-self: stretch;
+    width: 90%;
+}
+
+main {
+    display: inline-block;
+    padding: 7px 10px;
+}
+
+section {
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+}
+
+.pieForm {
+    grid-area: pieForm;
+}
+
+.pieForm {
+    display: inline-block;
+    margin: 8px 8px 8px 8px;
+    padding: 5px 5px 5px 5px;
+}
+
+.textPie {
+    margin-bottom: 30px;
+}
+
+.facebook {
+    width: 130px;
+    height: 60px;
+    margin-top: 30px;
+
+}
+
+.instagram {
+    width: 140px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.whatsapp {
+    width: 160px;
+    height: 60px;
+}
+
+/*donde estamos*/
+#gridDondeEstamos {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "textEncabezado textEncabezado textEncabezado"
+        "textUbicacion textUbicacion textUbicacion"
+        "mapa mapa mapa"
+        "direccion localExterior localExterior"
+        "fotosCiudad1 fotosCiudad2 fotosCiudad3"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.textEncabezado {
+    grid-area: textEncabezado;
+    justify-content: center;
+}
+
+.textUbicacion {
+    grid-area: textUbicacion;
+}
+
+.textUbicacion {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    justify-content: stretch;
+    text-align: justify;
+}
+
+
+
+.mapa {
+    grid-area: mapa;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    width: 60%;
+    margin-left: 25%;
+    justify-content: center;
+
+}
+
+
+.localExterior {
+    grid-area: localExterior;
+    width: 80%;
+    margin: 5px 5px 5px 25%;
+    padding: 5px 5px 5px 5px;
+}
+
+.direccion {
+    grid-area: direccion;
+    font-family: 'Poppins', italic;
+    font-size: 24px;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+}
+
+
+.fotosCiudad1 {
+    grid-area: fotosCiudad1;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+    width: 90%;
+}
+
+.fotosCiudad2 {
+    grid-area: fotosCiudad2;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+    width: 90%;
+}
+
+.fotosCiudad3 {
+    grid-area: fotosCiudad3;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+    width: 90%;
+}
+
+/*experiencias*/
+#gridExperiencia {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "textExperiencia textExperiencia textExperiencia"
+        "video video video"
+        "textExp2 textExp2 textExp2"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.textExperiencia {
+    grid-area: textExperiencia;
+    text-align: center;
+}
+
+.video {
+    grid-area: video;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    width: 60%;
+    margin-left: 25%;
+    justify-content: center;
+}
+
+.textExp2 {
+    grid-area: textExp2;
+    margin: 5px 5px 5px 5px;
+}
+
+
+#gridQuienes {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "textQuienes textQuienes textQuienes"
+        "encabezadoimg descripcion1 descripcion1"
+        "parrafos parrafos parrafos"
+        "imagenMuestra1 imagenMuestra2 imagenMuestra3"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.textQuienes {
+    grid-area: textQuienes;
+}
+
+.encabezadoimg {
+    grid-area: encabezadoimg;
+    margin: 5px;
+    padding: 7px 7px 7px 7px;
+    border: solid 3px white;
+    width: 100%;
+}
+
+
+.descripcion1 {
+    grid-area: descripcion1;
+}
+
+.descripcion1 {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+    margin: 15px;
+    justify-content: space-around;
+
+}
+
+div {
+    margin: 2rem 0;
+}
+
+.parrafos {
+    grid-area: parrafos;
+
+}
+
+.parrafo1 {
+    display: flex;
+    width: 95%;
+    margin: 5px 5px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}
+
+.parrafo2 {
+
+    display: flex;
+    width: 95%;
+    margin: 5px 5px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+
+}
+
+.imagenMuestra1 {
+    grid-area: imagenMuestra1;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+    width: 90%;
+    border: solid 3px white;
+    align-content: stretch;
+
+}
+
+.imagenMuestra2 {
+    grid-area: imagenMuestra2;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+    width: 90%;
+    border: solid 3px white;
+    align-content: stretch;
+}
+
+.imagenMuestra3 {
+    grid-area: imagenMuestra3;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+    width: 90%;
+    border: solid 3px white;
+    align-content: stretch;
+}
+
+/*footer*/
+footer {
+    grid-area: footer;
+    margin: 7px 7px 7px 7px;
+    border-top: solid 6px white;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.facebookPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+.instagramPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+.whatsappPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+/*movil*/
+@media screen and (max-width: 480px) {
+    body {
+        background: palevioletred;
+    }
+
+    .menu {
+        border: solid 2px white;
+        background-color: palevioletred;
+    }
+
+    .menuNavegacion {
+        font-family: 'Poppins', sans-serif;
+        padding: 7px;
+        width: 100%;
+
+
+    }
+
+    .menuBoton {
+        margin: 5px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+
+    .carrusel {
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        width: 95%;
+    }
+
+    .primerCarrusel {
+        width: 95%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        body {
+            background: #77A1D3;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+    }
+}
